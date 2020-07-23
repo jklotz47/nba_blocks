@@ -54,12 +54,12 @@ def ball():
     for game in games:
         p = requests.get(game)
         pbp = BeautifulSoup(p.content, 'html.parser')
-        log = pbp.find_all('tr')
+        stat_log = pbp.find_all('tr')
         
         
         c=0
        
-        for tr in (log):
+        for tr in (stat_log):
             c +=1
             plays = list(tr.find_all('td'))
              
@@ -74,7 +74,6 @@ def ball():
                 
                 ind_2 = str_splt(occur, 1, '<')
                 ind_3 = str_splt(occur, 1, '>') + 1
-                
                 ind_4 = str_splt(occur, 2, '<')
                 ind_5 = str_splt(occur, 2, '>') + 1 
                 
