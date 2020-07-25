@@ -23,8 +23,7 @@ def ball():
     months = ['october', 'november', 'december', 'january',
               'february', 'march']
         
-    main = 'https://www.basketball-reference.com'
-                
+    main = 'https://www.basketball-reference.com' 
     all_months = 'https://www.basketball-reference.com/leagues/NBA_2020_games-'
     
     wb = Workbook()
