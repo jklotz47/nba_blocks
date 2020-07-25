@@ -55,8 +55,7 @@ def ball():
         p = requests.get(game)
         pbp = BeautifulSoup(p.content, 'html.parser')
         stat_log = pbp.find_all('tr')
-        
-        
+       
         c=0
        
         for tr in (stat_log):
