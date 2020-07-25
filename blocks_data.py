@@ -139,10 +139,7 @@ def ball():
                                 
                     elif dic['reb'] == 'D':
                         sheet1.write(cell, 4, 0)
-                        sheet1.write(cell, 3, 1)
-                        
-                    else:
-                        sheet1.write(cell, 4, dic['reb'])           
+                        sheet1.write(cell, 3, 1)     
                         
                     cell += 1                   
                     
